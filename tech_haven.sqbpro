@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="tech_haven.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1146"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="products" custom_title="0" dock_id="1" table="4,8:mainproducts"/><dock_state state="000000ff00000000fd0000000100000002000002480000020cfc0100000001fb000000160064006f0063006b00420072006f00770073006500310100000000000002480000011e00ffffff000002480000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1*">CREATE TABLE products (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    description TEXT,
+    image_url TEXT,
+    price REAL NOT NULL,
+    category_id INTEGER,
+    is_featured BOOLEAN
+);
+
+INSERT INTO products (name, description, image_url, price, category_id, is_featured)
+VALUES 
+('Wireless Earbuds', 'High-quality sound and wireless convenience.', 'images/product1.jpg', 49.99, 1, 1),
+('Smart Watch', 'Feature-packed smart wearable for fitness and notifications.', 'images/product2.jpg', 99.99, 2, 0),
+('Noise Cancelling Headphones', 'Immersive sound with active noise cancellation.', 'images/product3.jpg', 199.99, 3, 1);
+</sql><current_tab id="0"/></tab_sql></sqlb_project>

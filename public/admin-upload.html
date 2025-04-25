@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Bulk Upload - Tech Haven</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <h1>Bulk Upload - Admin</h1>
+        <nav>
+            <a href="admin-upload.html">Bulk Upload</a>
+            <a href="admin-products.html">Product Listing</a>
+            <a href="#">Sign Out</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Upload Product Data</h2>
+        <form id="bulk-upload-form" enctype="multipart/form-data">
+            <label for="file-upload">Select File:</label>
+            <input type="file" id="file-upload" name="file-upload" accept=".json,.csv,.txt" required>
+            <button type="submit">Upload</button>
+        </form>
+        <section>
+            <h3>Example File Format</h3>
+            <pre>
+{
+    "id": 1,
+    "name": "Wireless Earbuds",
+    "category": "Electronics",
+    "price": 99.99,
+    "description": "High-quality sound and wireless convenience."
+}
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Tech Haven. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

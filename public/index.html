@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tech Haven - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Tech Haven</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="admin-products.html">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Our Latest Tech Products</h2>
+            <div class="product-gallery">
+                <div class="product" id="product1">
+                    <img src="images/product1.jpg" alt="Wireless Earbuds" class="product-image">
+                    <h3>Wireless Earbuds</h3>
+                    <p>Price: $49.99</p>
+                    <button onclick="addToCart('Wireless Earbuds', 49.99)">Add to Cart</button>
+                </div>
+                <div class="product" id="product2">
+                    <img src="images/product2.jpg" alt="Smart Watch" class="product-image">
+                    <h3>Smart Watch</h3>
+                    <p>Price: $99.99</p>
+                    <button onclick="addToCart('Smart Watch', 99.99)">Add to Cart</button>
+                </div>
+                <div class="product" id="product3">
+                    <img src="images/product3.jpg" alt="Noise-Cancelling Headphones" class="product-image">
+                    <h3>Noise-Cancelling Headphones</h3>
+                    <p>Price: $199.99</p>
+                    <button onclick="addToCart('Noise-Cancelling Headphones', 199.99)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tech Haven. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

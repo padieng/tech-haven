@@ -1,0 +1,10 @@
+# Ignore node dependencies
+node_modules/
+
+# Ignore SQLite database
+tech_haven.db
+
+# Optional: ignore environment or debug files
+.env
+.DS_Store
+*.log
